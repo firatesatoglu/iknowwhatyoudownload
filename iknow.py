@@ -4,6 +4,16 @@ import pprint
 import json
 import time
 
+"""
+requirements
+
+pip install requests
+pip install argparse
+pip install pprint
+pip install json
+pip install time
+"""
+
 ipInformation= {'ipInformation':{
                 'geographyData':{},
                 'downloadContents':{}}}
@@ -45,7 +55,7 @@ def ipExist(apiKEY, ipAddr, requestURL):
         else:
             print(f'nope \'{ipAddr}\' not found.:|')
 
-apiKEY= '*********************************' #CHANGE ME!!!!
+apiKEY= '5b26f6e5014f4a68b6e8c0116220f026' #CHANGE ME!!!!
 ipURL= 'https://api.antitor.com/history/peer?ip='
 existIPurl= 'https://api.antitor.com/history/exist?ip='
 
